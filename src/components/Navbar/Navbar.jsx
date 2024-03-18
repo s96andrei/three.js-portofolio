@@ -66,7 +66,6 @@ const Navbar = () => {
           <Logo src="./img/a-logo-color.svg"/>
           <List>
             <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
             <ListItem>Works</ListItem>
             <ListItem>Contact</ListItem>
           </List>
