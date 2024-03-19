@@ -57,22 +57,27 @@ const Button = styled.button`
  border: none;
 `;
 
+const linkedInLink = "https://www.linkedin.com/in/andrei-stefanica-605992232/";
 
 const Navbar = () => {
+  const handleLinkClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Section>
       <Container>
         <Links>
-          <Logo src="./img/a-logo-color.svg"/>
+          <Logo src="./img/a-logo-color.svg" />
           <List>
             <ListItem>Home</ListItem>
-            <ListItem>Works</ListItem>
+            <ListItem>Work</ListItem>
             <ListItem>Contact</ListItem>
           </List>
         </Links>
         <Icons>
           <Icon src="./img/search.png" />
-          <Button>Hire now</Button>
+          <Button onClick={() => handleLinkClick(linkedInLink)}>Hire Now</Button>
         </Icons>
       </Container>
     </Section>

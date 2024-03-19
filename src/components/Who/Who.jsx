@@ -67,16 +67,19 @@ const Button = styled.button`
 `;
 
 const Who = () => {
+ 
+
+
   return (
     <Section>
       <Container>
         <Left>
-        <Canvas camera={{fox:25, position:[5,5,5]}}>
+          <Canvas camera={{fox:25, position:[5,5,5]}}>
             <OrbitControls enableZoom={false} autoRotate/>
             <ambientLight intensity={1}/>
             <directionalLight position={[3,2,1]}/>
-        <Cube/>
-        </Canvas>
+            <Cube/>
+          </Canvas>
         </Left>
         <Right>
           <Title>Think outside the box</Title>
@@ -87,7 +90,7 @@ const Who = () => {
           <Desc>
             a creative front-end developer with a passion for crafting visually stunning and intuitive user interfaces.
           </Desc>
-          <Button>See my work</Button>
+          <Button >See my work</Button>
         </Right>
       </Container>
     </Section>

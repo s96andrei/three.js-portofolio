@@ -88,7 +88,15 @@ const Img = styled.img`
   }
 `;
 
+
+const gitHubLink = "https://github.com/s96andrei";
+
 const Hero = () => {
+
+  const handleLinkClick = (link) => {
+    window.open(link, "_blank");
+  };
+
   return (
     <Section>
       <Navbar />
@@ -102,7 +110,7 @@ const Hero = () => {
           <Desc>
           exploring new technologies, experimenting with innovative designs, or finding novel solutions to complex problems
           </Desc>
-          <Button>Learn More</Button>
+          <Button onClick={() => handleLinkClick(gitHubLink)}>Learn More</Button>
         </Left>
         <Right>
         <Canvas camera={{fox:25, position:[5,5,5]}}>
