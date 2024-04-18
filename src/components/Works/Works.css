@@ -86,18 +86,21 @@
       flex-direction: column;
     }
     .works-left{
-      justify-content: center;
+      /* justify-content: center; */
       padding: 20px;
       margin-bottom: 20px;
     }
     .works-right{
-      padding-bottom: 50px;
+      padding-bottom: 100px;
+      justify-content: center;
       
     }
     .works-list-item{
       font-size: 24px;
       color: white;
       -webkit-text-stroke: 0px;
+    }
+    .click-here-text {
     }
   }
   

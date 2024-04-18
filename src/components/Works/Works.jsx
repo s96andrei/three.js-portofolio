@@ -190,12 +190,12 @@ const Works = () => {
           <ul className="works-list">
             {selectedProject && (
               <li className="works-list-item-small">
-                <span
+                <p
                   className="click-here-text"
                   onClick={() => handleLinkClick(selectedProject.link)}
                 >
                   Click here
-                </span>
+                </p>
               </li>
             )}
           </ul>
