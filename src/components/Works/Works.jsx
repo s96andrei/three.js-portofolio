@@ -166,20 +166,7 @@ const Works = () => {
   return (
     <div className="works-section">
       <div className="works-container">
-        <div className="works-left">
-          <ul className="works-list">
-            {data.map((item, i) => (
-              <li
-                key={i}
-                className="works-list-item"
-                onClick={() => handleItemClick(item)}
-              >
-                {item.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="works-right">
+      <div className="works-left">
           {selectedProject && (
             <React.Fragment>
               {selectedProject.name === "Game Store" && <Project1 />}
@@ -200,6 +187,20 @@ const Works = () => {
             )}
           </ul>
         </div>
+        <div className="works-right">
+          <ul className="works-list">
+            {data.map((item, i) => (
+              <li
+                key={i}
+                className="works-list-item"
+                onClick={() => handleItemClick(item)}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      
       </div>
     </div>
   );
