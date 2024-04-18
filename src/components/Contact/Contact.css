@@ -53,3 +53,14 @@
     flex: 1;
   }
   
+  @media only screen and (max-width: 768px) {
+   .left{
+    justify-content: center;
+   }
+   .right{
+    display: none;
+   }
+   form{
+    width: 300px;
+   }
+  }

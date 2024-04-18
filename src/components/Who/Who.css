@@ -6,7 +6,7 @@
   }
   
   .who-container {
-    height: 100vh;
+    height: 100%;
     scroll-snap-align: center;
     width: 1400px;
     display: flex;
@@ -61,3 +61,32 @@
     border: none;
   }
   
+  @media only screen and (max-width: 768px) {
+    .who-section{
+      height: 200vh;
+    }
+
+    .who-container {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .who-left{
+      display: none;
+    }
+    .who-right{
+      width: 100%;
+      align-items: center;
+      text-align: center;
+    }
+    .who-title{
+      text-align: center;
+      font-size: 40px;
+    }
+    .who-desc {
+      padding: 20px;
+      text-align: center;
+    }
+  }

@@ -80,5 +80,19 @@
     cursor: pointer;
   }
   
-
+  @media only screen and (max-width: 768px) {
+    .works-container{
+      width: 100%;
+      flex-direction: column;
+    }
+    .works-left{
+      /* justify-content: center; */
+      padding: 20px;
+    }
+    .works-list-item{
+      font-size: 24px;
+      color: white;
+      -webkit-text-stroke: 0px;
+    }
+  }
   

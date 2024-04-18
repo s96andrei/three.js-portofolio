@@ -15,23 +15,6 @@
     height: 20px;
   }
   
-  .navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-  }
-  
-  .navbar-icons {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .navbar-icon {
-    width: 20px;
-    cursor: pointer;
-  }
-  
   .navbar-button {
     cursor: pointer;
     width: 100px;
@@ -42,3 +25,15 @@
     border: none;
   }
   
+  @media only screen and (max-width: 768px) {
+    .navbar-section {
+      width: 100%;
+    }
+    .navbar-logo {
+      padding: 10px;
+    }
+    .navbar-button {
+      margin-right: 10px;
+    }
+
+  }

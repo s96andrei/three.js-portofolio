@@ -162,7 +162,7 @@ const Hero = () => {
           <button className="hero-button" onClick={() => handleLinkClick(gitHubLink)}>Learn More</button>
         </div>
         <div className="hero-right">
-          <Canvas style={{ width: '900px', height: '900px' }} camera={{fox:25, position:[5,5,5]}}>
+          <Canvas camera={{fox:25, position:[5,5,5]}}>
             <OrbitControls enableZoom={false}/>
             <ambientLight intensity={1}/>
             <directionalLight position={[200,150,100]}/>
