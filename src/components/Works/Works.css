@@ -86,8 +86,13 @@
       flex-direction: column;
     }
     .works-left{
-      /* justify-content: center; */
+      justify-content: center;
       padding: 20px;
+      margin-bottom: 20px;
+    }
+    .works-right{
+      padding-bottom: 50px;
+      
     }
     .works-list-item{
       font-size: 24px;

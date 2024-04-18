@@ -168,7 +168,6 @@ const Works = () => {
       <div className="works-container">
         <div className="works-left">
           <ul className="works-list">
-            {/* <h1 className="works-title">Projects</h1> */}
             {data.map((item, i) => (
               <li
                 key={i}
